@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +19,7 @@
 
     <header>
         <div class="container">
-            <nav class="nav">
+            <nav data-aos="flip-up" class="nav">
                 <svg width="202" height="59" viewBox="0 0 202 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2403_439)">
                         <path
@@ -126,7 +129,7 @@
                     <button>ПОДОБРАТЬ ПРОГРАММУ</button>
 
                 </div>
-                <img class="corm" src="./img/corm.png" alt="">
+                <img data-aos="fade-up"data-aos-duration="3000" class="corm" src="./img/corm.png" alt="">
 
             </div>
         </div>
@@ -134,7 +137,7 @@
     </header>
     <section class="section1">
         <div class="wrapper">
-            <div class="card card1">
+            <div data-aos="zoom-in-down" class="card card1">
                 <div class="svg">
                     <svg width="100" height="106" viewBox="0 0 100 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="56" r="50" fill="#68B738" />
@@ -165,7 +168,7 @@
 
 
             </div>
-            <div class="card card2">
+            <div data-aos="zoom-in-down" class="card card2">
                 <div class="svg">
                     <svg width="134" height="100" viewBox="0 0 134 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="69" cy="50" r="50" fill="#68B738" />
@@ -324,8 +327,8 @@
                         без изнуряющих тренировок! При этом он не менял своих <br>
                         привычек и по-прежнему спит по 16 часов в день. </p>
                         <div class="state">
-                        <img class="kg5" src="./img/5kg.png" alt="">
-                        <img class="60d" src="./img/60d.png" alt="">
+                        <img data-aos="flip-left" class="kg5" src="./img/5kg.png" alt="">
+                        <img data-aos="flip-right" class="60d" src="./img/60d.png" alt="">
                     </div>
                      <div class="state">
                         <h5>Затраты на питание: </h5>
@@ -379,6 +382,12 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
